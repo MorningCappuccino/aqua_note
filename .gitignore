@@ -1,0 +1,11 @@
+/vendor/
+/var/*
+!var/SymfonyRequirements.php
+/phpunit.xml*
+/web/bundles/*
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
