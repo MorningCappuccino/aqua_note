@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+{#{% use 'bootstrap_3_layout.html.twig' %}#}
+
+{% block title %}Genuses list{% endblock %}
+
+{% block body %}
+    <table class="table">
+    <thead>
+    <tr>
+        <td>Genus name</td>
+        <td>subFamily</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for genus in genuses %}
+            <tr>
+                <td>{{ genus.genusname }}</td>
+                <td>{{ genus.subFamily }}</td>
+                <td></td>
+            </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}

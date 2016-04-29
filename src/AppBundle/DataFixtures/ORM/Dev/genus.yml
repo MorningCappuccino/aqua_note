@@ -1,0 +1,5 @@
+AppBundle\Entity\Genus:
+    genus_{1..10}:
+        genusname: <text(7)>
+        postedAt: <dateTimeBetween('-3 month', 'now')>
+
